@@ -1,7 +1,7 @@
 import Expense from "./ExpencesList/Expense";
 import { useState } from "react";
 
-function ExpencesList() {
+const ExpencesList = () => {
   const expenses = [
     {
       id: "e1",
@@ -48,6 +48,6 @@ function ExpencesList() {
       ></Expense>
     </div>
   );
-}
+};
 
 export default ExpencesList;

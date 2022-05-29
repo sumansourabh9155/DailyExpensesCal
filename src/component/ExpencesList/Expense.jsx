@@ -2,7 +2,7 @@ import "./Expense.css";
 
 import ExpenseCard from "../Background/ExpenseCard";
 
-function Expense(props) {
+const Expense = (props) => {
   const month = props.date.toLocaleString("en-US", { month: "long" });
   const date = props.date.toLocaleString("en-US", { day: "2-digit" });
   const year = props.date.getFullYear();
@@ -19,5 +19,5 @@ function Expense(props) {
       </div>
     </ExpenseCard>
   );
-}
+};
 export default Expense;
